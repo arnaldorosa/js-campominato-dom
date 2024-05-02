@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: darkgoldenrod;
+}
+
+.container-game {
+    max-width: 700px;
+    height: 700px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: black;
+}
+
+.game-bar {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.square {
+    border: 3px solid black;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+    transition: all 0.2s ease-in-out;
+}
+
+.square-10 {
+    width: calc((100% / 10) - 4px);
+    height: calc(100% / 10);
+}
+
+.square-9 {
+    width: calc((100% / 9) - 4px);
+    height: calc(100% / 9);
+}
+
+.square-7 {
+    width: calc((100% / 7) - 4px);
+    height: calc(100% / 7);
+}
+
+.container-game > .square:hover {
+    background-color: black;
+    color: black;
+}
+
+.active {
+    background-color: black;
+    color: black;
+}
